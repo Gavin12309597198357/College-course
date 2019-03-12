@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Student
+comment1.params=
+comment1.target=Student()
+comment2.params=id\ index
+comment2.target=void\ setCourseID(java.lang.String,\ int)
+comment3.params=index
+comment3.target=CollegeCourse\ getCourse(int)
+comment4.params=stu
+comment4.target=void\ setStudentNum(int)
+comment5.params=
+comment5.target=int\ getStudentNum()
+numComments=6
