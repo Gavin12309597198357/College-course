@@ -1,0 +1,29 @@
+/**
+ * Write a description of class Student here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Student
+{
+   Collegecourse[] courses = new Collegecourse[5];
+                             
+   
+   private int sNum;
+   private int CollegeCourse;
+   Student(){
+       for (int i=0; i<courses.length; i++){
+        this.courses[i]=new Collegecourse();
+        }
+    }
+    public void setCourseID(String id, int index) {this.courses[index].setCourseID(id);}
+    public Collegecourse getCourse(int index) { return this.courses[index];}
+    public void setStudentNum(int stu) {this.sNum=stu;}
+    public int getStudentNum() {return this.sNum;}
+    public void setCredit(int CH, int index) {this.courses[index].setCreditHours(CH);}
+    public Collegecourse getCreditHours(int index) { return this.courses[index];}
+    public void setGrade(char Grd, int index) {this.courses[index].setGrade(Grd);}
+    public Collegecourse getGrade(int index) { return this.courses[index];}
+    public void setCollegeCourse(int CC) {this.CollegeCourse=CC;}
+    public int getCollegeCourse() {return this.CollegeCourse;}
+}
