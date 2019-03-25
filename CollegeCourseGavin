@@ -1,0 +1,32 @@
+/**
+ * Write a description of class Collegecourse here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Collegecourse
+{
+    private String CourseID;
+    private int CreditHours;
+    private char Grade;
+   
+    public String getCourseID()
+    {
+        return this.CourseID;   
+    }
+    public void setCourseID(String ID){
+        this.CourseID = ID;
+    }
+    public int getCreditHours(){
+        return this.CreditHours;
+    }
+    public void setCreditHours(int CH){
+        this.CreditHours = CH;
+    }
+    public char getGrade(){
+      return Grade;  
+    }
+    public void setGrade(char Grd){
+        this.Grade = Grd;
+    }
+}
