@@ -1,0 +1,50 @@
+import java.util.Scanner;
+import java.util.*;
+import java.io.*;
+/**
+ * Write a description of class input here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class input
+{
+    public static void main(String[] args){
+        Scanner scanner1 = new Scanner(System.in);
+        Scanner scanner2 = new Scanner(System.in);
+        Scanner scanner3 = new Scanner(System.in);
+        Scanner scanner4 = new Scanner(System.in);
+        
+        Student[] studentID = new Student[3];
+        for (int i=0; i<studentID.length; i++){
+            System.out.println("Enter Student ID");
+            studentID[i]=new Student();
+            studentID[i].setStudentNum(scanner1.nextInt());
+            System.out.println(studentID[i].getStudentNum());
+            for (int l = 0; l < 3; l++){
+                //prints out Enter Class
+                System.out.println("Enter Class");
+                //lets the next line that lets you put the 
+                studentID[i].setCourseID(scanner2.nextLine(), l);
+                System.out.println(studentID[i].getCourse(l).getCourseID());
+                System.out.println("Enter Credit Hours");
+                studentID[i].setCredit(scanner3.nextInt(), l);
+                System.out.println(studentID[i].getCreditHours(l).getCreditHours());
+                System.out.println("Enter Class Grade");
+                studentID[i].setGrade(scanner4.next().charAt(0), l);
+                System.out.println(studentID[i].getGrade(l).getGrade());
+                
+            }
+        }
+        for (int i=0; i<studentID.length; i++){
+          System.out.println("Student #" + studentID[i].getStudentNum());
+          System.out.println("Course Name   \tCredit hour   \tGrade");
+          for (int y = 1; y<3; y++){
+              System.out.println(i + " __ " + "\t" +
+              studentID[i].getCourse(y).getCourseID() + "\t"+
+              studentID[i].getCourse(y).getCreditHours() + "    \t"+
+              studentID[i].getCourse(y).getGrade() + "     \t");
+            }
+            }
+    }
+}
